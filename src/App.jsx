@@ -45,7 +45,7 @@ function App() {
              <ToastContainer/>
              
             <Routes>
-              <Route element={<Layout />}> 
+              <Route element={state.userName ? <Layout/> : <Navigate to="/login" /> }> 
                 <Route path="/" element={state.userName ?  <CreateImg /> : <Navigate to="/login" />  }/> 
                 <Route path="/feed" element={state.userName ?  <Feed /> : <Navigate to="/login" />  }/> 
                 <Route path="/collection" element={state.userName ?  <Collection /> : <Navigate to="/login" />  }/> 
