@@ -23,7 +23,7 @@ export const Collection = () => {
         <p className="text-sm text-gray-400">
           {collection.length > 0 
             ? `${collection.length} ${collection.length === 1 ?
-            "imagen guardada" : "imagenes guardadas"}`
+            "coleccion guardada" : "coleccions guardadas"}`
             : "Las imagenes que guardes apareceran aqui"
           }
         </p>
